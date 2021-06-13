@@ -116,7 +116,7 @@ h6 {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    transition-property: color fill;
+    transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -167,7 +167,7 @@ h6 {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    transition-property: color fill;
+    transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -427,7 +427,7 @@ h6 {
     align-items: center;
     fill: var(--static-color-svg-icons);
     border-radius: 50%;
-    transition-property: background-color fill;
+    transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -468,7 +468,7 @@ h6 {
     border-radius: 4px;
     height: 90px;
     fill: var(--static-color-svg-icons);
-    transition-property: fill border;
+    transition-property: fill, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -618,7 +618,7 @@ h6 {
     line-height: 1.62;
     text-align: center;
     cursor: pointer;
-    transition-property: color background-color;
+    transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -660,13 +660,16 @@ h6 {
     display: block;
 }
 
-.card-list:hover,
-.card-list-link:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .card-list-link {
     text-decoration: none;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-list-link:hover,
+.card-list-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-back-side {
