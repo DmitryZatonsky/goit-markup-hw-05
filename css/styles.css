@@ -116,6 +116,9 @@ h6 {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition-property: color fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -164,6 +167,9 @@ h6 {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition-property: color fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-contacts-icon {
@@ -213,6 +219,9 @@ h6 {
     border-radius: 4px;
     color: var(--title-text-color-hero-footer);
     background-color: var(--accent-color);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -418,6 +427,9 @@ h6 {
     align-items: center;
     fill: var(--static-color-svg-icons);
     border-radius: 50%;
+    transition-property: background-color fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team-social-link:hover,
@@ -456,6 +468,15 @@ h6 {
     border-radius: 4px;
     height: 90px;
     fill: var(--static-color-svg-icons);
+    transition-property: fill border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
 .customers-icon {
@@ -463,12 +484,6 @@ h6 {
     align-items: center;
     justify-content: center;
     height: inherit;
-}
-
-.customers-link:hover,
-.customers-link:focus {
-    fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
 }
 
 
@@ -514,6 +529,10 @@ h6 {
     height: inherit;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-icon {
@@ -523,7 +542,6 @@ h6 {
 .footer-social-link:hover,
 .footer-social-link:focus {
     background-color: var(--accent-color);
-    border-radius: 50%;
 }
 
 .footer .logo {
@@ -555,6 +573,9 @@ h6 {
 .footer-contacts .link {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contacts .link:hover,
@@ -597,6 +618,9 @@ h6 {
     line-height: 1.62;
     text-align: center;
     cursor: pointer;
+    transition-property: color background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
@@ -670,6 +694,9 @@ h6 {
     line-height: 1.556;
     color: var(--primary-white-color);
     opacity: 0;
+    transition-property: background opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-list:hover .paragraph-back-side {
