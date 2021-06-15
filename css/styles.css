@@ -343,6 +343,35 @@ h6 {
   display: block;
 }
 
+.work-thumb {
+  position: relative;
+}
+
+.work-thumb-img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.work-thumb-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
 /*================= Наша команда =================*/
 
 .our-team {
